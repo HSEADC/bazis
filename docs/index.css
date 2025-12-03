@@ -200,6 +200,14 @@ p {
   line-height: 24rem;
 }
 
+a {
+  font-weight: 400;
+  font-size: 18rem;
+  line-height: 24rem;
+  text-decoration: none;
+  color: #283C74;
+}
+
 #index, #plug{
   display: flex;
   flex-direction: column;
@@ -330,6 +338,12 @@ h4#my-form-status{
   display: flex;
   align-items: center;
   gap: 12rem;
+}
+
+#indexN{
+  display: flex;
+  align-items: center;
+  gap: 7rem;
 }
 
 #plugMedia{
@@ -478,6 +492,34 @@ h4#my-form-status{
 
 #plugForm #my-form{
   width: 555rem;
+}
+
+.icon path:first-of-type {
+  fill: #363636;
+  width: 48rem;
+  height: 48rem;
+  transition: fill ease 0.5s;
+}
+.icon:nth-of-type(1) svg:hover path:first-of-type {
+  fill: #0077ff;
+  transition: fill ease 0.8s;
+}
+.icon:nth-of-type(2) svg:hover path:first-of-type {
+  fill: #2aabee;
+  transition: fill ease 0.8s;
+}
+.icon:nth-of-type(3) svg:hover path:first-of-type {
+  fill: #ff0302;
+  transition: fill ease 0.8s;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10rem;
+  gap: 20rem;
+}
+.text {
+  color: blue;
 }
 @media screen and (max-width: 780px) {
 html {
