@@ -9,118 +9,154 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+  font-family: 'Jura', 'Manrope';
+  background: #F9F8F4;
+}
+h1 {
+  font-size: 126rem;
+  line-height: normal;
+  color: #1D2025;
+}
+h2 {
+  font-size: 72rem;
+  line-height: normal;
+  color: #1D2025;
+}
+h3 {
+  font-size: 42rem;
+  line-height: normal;
+  color: #1D2025;
+}
+h4 {
+  font-size: 40rem;
+  line-height: normal;
+  color: #1D2025;
+}
+p{
+  font-family: 'Manrope';
+  font-size: 16rem;
+  line-height: normal;
+  color: #1D2025;
+  font-weight: 400;
+}
+a{
+  font-family: 'Manrope';
+  font-size: 16rem;
+  line-height: normal;
+  color: #F9F8F4;
+  font-weight: 500;
+  line-height: 20rem;
 }
 .W_HeaderLinks {
-  padding: 10rem 40rem;
+  display: flex;
+  width: 90vw;
+  padding-top: 16rem;
+  justify-content: space-between;
+  align-items: center;
 }
 .A_HeaderLink {
   text-decoration: none;
-  color: #aaa;
+  display: flex;
+  height: 45rem;
+  padding: 13rem 18rem;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12rem;
+  border-radius: 23rem;
+  background-color: #1D2025;
   transition: all ease 0.4s;
 }
 .A_HeaderLink:hover {
-  color: #fff;
+  background-color: #F16F33;
   transition: all ease 0.6s;
 }
 .O_Header {
-  background-color: #090227cc;
-  border-radius: 0 0 40rem 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16rem;
 }
 .M_Header {
   display: flex;
-  justify-content: space-between;
-  padding: 0 40rem 40rem;
+  justify-content: center;
   align-items: center;
+  width: 90vw;
+  background-image: url(/src/images/fon_styleguide.svg);
+  height: 618rem;
+  background-size: cover;
 }
 .A_HeaderImage {
   width: 200rem;
 }
 .A_MainHeader {
-  font-weight: 700;
-  font-size: 120rem;
-  color: #eee;
+
   display: block;
 }
-.A_SectionHeader {
-  font-weight: 500;
-  font-size: 58rem;
-  line-height: 64rem;
-  color: #090227;
-  margin-bottom: 30rem;
-}
-.A_SectionDopHeader {
-  font-weight: 500;
-  font-size: 38rem;
-  line-height: 54rem;
-  color: #090227;
-  margin-bottom: 20rem;
-}
-.A_MainSectionText,
-.A_HeaderLink {
-  font-weight: 400;
-  font-size: 28rem;
-  line-height: 36rem;
-  color: #090227;
-}
-.A_MainSectionText {
-  margin-bottom: 20rem;
+.A_MainSectionText{
+  width: 36vw;
 }
 .S_Main {
   display: flex;
-  padding: 60rem 0;
+  padding: 54rem 72rem;
 }
-.O_Sidebar,
-.O_Aside {
-  padding: 0 20rem;
-  width: 20%;
+.O_Sidebar {
+  width: 40%;
   position: relative;
 }
 .O_MainSection {
+  display: flex;
   width: 60%;
+  gap: 54rem;
   position: relative;
+  flex-direction: column;
 }
 .C_MainSectionLinks {
-  width: 16vw;
-  position: fixed;
+  width: 8vw;
+  padding-top: 12rem; 
   display: flex;
   flex-direction: column;
-  gap: 10rem;
-  background-color: #090227cc;
-  border-radius: 30rem;
-  padding: 10rem;
 }
 .A_MainSectionLink {
-  width: 100%;
-  border-radius: 22rem;
-  background: #eee;
-  color: #090227;
-  padding: 10rem 20rem;
+  padding: 9rem 0;
   text-decoration: none;
+  color: #B7B7B6;
   transition: all ease 0.4s;
-  font-size: 28rem;
 }
 .A_MainSectionLink:hover {
-  background: #090227;
-  background: radial-gradient(circle, rgb(69, 46, 128) 0%, rgb(9, 2, 39) 100%);
-  color: #eee;
+  color: #1D2025;
   transition: all ease 0.8s;
 }
-.C_MainSectionLinks a:active {
-  background-color: cornflowerblue;
-}
 .W_MainSection {
-  margin-top: 80rem;
-}
-.W_MainSectionBlock_row {
   display: flex;
-  gap: 20rem;
+  gap: 39rem;
+  flex-direction: column;
 }
-.W_MainSectionBlock_column {
-  padding: 40rem 0 0 180rem;
+.W_MainSect{
+  display: flex;
+  gap: 24rem;
+  flex-direction: column;
+}
+.A_MainSect{
+  display: flex;
+  gap: 18rem;
+  flex-direction: column;
+}
+.A_MainSectionImg_1{
+  width: 35%;
+}
+.A_MainSectionImg_2{
+  width: 50%;
+}
+.A_MainSectionImg_3{
+  width: 75%;
+}
+.A_MainSectionText_p{
+  font-size: 12rem;
+}
+.W_MainSectionBlock {
   display: flex;
   flex-direction: column;
-  gap: 20rem;
+  gap: 12rem;
 }
 @media screen and (max-width: 1023px) {
   .O_Aside {
@@ -147,13 +183,7 @@ body {
     flex-direction: row;
     width: 90%;
     bottom: 10rem;
-    /* background-color: #09022775;
-    backdrop-filter: blur(4rem); */
   }
-  /* .C_MainSectionLinks a {
-    background-color: #eeeeee75;
-    backdrop-filter: blur(4rem);
-  } */
 
   .A_MainHeader {
     font-size: 190rem;

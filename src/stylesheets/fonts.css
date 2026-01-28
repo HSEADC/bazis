@@ -1,4 +1,9 @@
 @font-face {
+  font-family: 'Jura';
+  src: url('../fonts/Jura-Bold.ttf');
+  font-weight: 800;
+}
+@font-face {
   font-family: 'Manrope';
   src: url('../fonts/Manrope-ExtraBold.ttf');
   font-weight: 800;
