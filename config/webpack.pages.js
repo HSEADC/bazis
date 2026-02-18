@@ -9,22 +9,36 @@ function createPage(template, filename, chunks) {
 }
 
 const htmlPages = [
-  createPage('./src/index.html', './index.html', ['index']),
-  createPage('./src/pages/articles.html', './pages/articles.html', ['index']),
-  createPage('./src/pages/thought.html', './pages/thought.html', ['index']),
-  createPage('./src/pages/rituals.html', './pages/rituals.html', ['index']),
-  createPage('./src/pages/tests.html', './pages/tests.html', ['index']),
-  createPage('./src/pages/tests/test1.html', './pages/tests/test1.html', ['index']),
-  createPage('./src/pages/tests/test2.html', './pages/tests/test2.html', ['index']),
-  createPage('./src/pages/tests/test3.html', './pages/tests/test3.html', ['index']),
-  createPage('./src/pages/articles/article1.html','./pages/articles/article1.html', ['index']),
-  createPage('./src/pages/articles/article2.html','./pages/articles/article2.html', ['index']),
-  createPage('./src/pages/articles/article3.html','./pages/articles/article3.html', ['index']),
-  createPage('./src/pages/rituals/ritual1.html','./pages/rituals/ritual1.html', ['index']),
-  createPage('./src/pages/rituals/ritual2.html','./pages/rituals/ritual2.html', ['index']),
-  createPage('./src/pages/rituals/ritual3.html','./pages/rituals/ritual3.html', ['index']),
-  createPage('./src/pages/plug.html','./pages/plug.html'),
-  createPage('./src/styleguide.html', './styleguide.html', ['styleguide'])
+  createPage('./src/index.html', './index.html', ['index', 'basic']),
+  createPage('./src/pages/articles.html', './pages/articles.html', [
+    'articles',
+    'basic'
+  ]),
+  createPage('./src/pages/dictionary.html', './pages/dictionary.html', [
+    'index',
+    'basic'
+  ]),
+  createPage('./src/pages/tests.html', './pages/tests.html', [
+    'index',
+    'basic'
+  ]),
+  createPage(
+    './src/pages/articles/article1.html',
+    './pages/articles/article1.html',
+    ['index', 'basic']
+  ),
+  createPage('./src/styleguide.html', './styleguide.html', [
+    'styleguide',
+    'basic'
+  ]),
+  createPage('./src/pages/theory.html', './pages/theory.html', [
+    'theory',
+    'basic'
+  ]),
+  createPage('./src/pages/tests/test1.html', './pages/tests/test1.html', [
+    'test1',
+    'basic'
+  ])
 ]
 
 module.exports = htmlPages

@@ -422,3 +422,35 @@ nav {
 .text {
   color: blue;
 }
+
+.S_IndexSection{
+  display: flex;
+  margin: 0rem 72rem 54rem 72rem;
+  flex-direction: column;
+  height: 448.2rem;
+  align-items: flex-start;
+  gap: 3.25rem;
+  align-self: stretch;
+  background-image: url(/src/images/test_fon1.svg);
+  background-size: contain;
+  justify-content: center;
+}
+
+.C_IndexSectionCards{
+  display: flex;
+  gap: 24rem;
+  flex-direction: column;
+  width: 600rem;
+  margin-left: 480rem;
+}
+
+.C_IndexSectionCardTags{
+  display: flex;
+  gap: 16rem;
+  flex-direction: column;
+}
+
+.h3_test_cards{
+  width: 600rem;
+}
+
