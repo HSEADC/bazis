@@ -14,10 +14,6 @@ const htmlPages = [
     'articles',
     'basic'
   ]),
-  createPage('./src/pages/dictionary.html', './pages/dictionary.html', [
-    'index',
-    'basic'
-  ]),
   createPage('./src/pages/tests.html', './pages/tests.html', [
     'index',
     'basic'
@@ -29,10 +25,6 @@ const htmlPages = [
   ),
   createPage('./src/styleguide.html', './styleguide.html', [
     'styleguide',
-    'basic'
-  ]),
-  createPage('./src/pages/theory.html', './pages/theory.html', [
-    'theory',
     'basic'
   ]),
   createPage('./src/pages/tests/test1.html', './pages/tests/test1.html', [

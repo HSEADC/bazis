@@ -7,7 +7,7 @@ function initTest(stages) {
   const question = document.querySelector('.A_TestQuestion')
   const answers = document.querySelectorAll('.A_TestAnswerText')
 
-  numberOfQuestion.innerHTML = `${currentStage + 1}/${stages.length}`
+  numberOfQuestion.innerHTML = `Вопрос:${currentStage + 1}/${stages.length}`
 
   question.innerHTML = stages[currentStage].question
 
@@ -45,15 +45,18 @@ function updateStage(stages, resultTable) {
 }
 
 function showResult(resultTable) {
-  const allTest = document.querySelector('.O_Test')
-  allTest.innerHTML = ''
+  const all = document.querySelector('.S_Test')
+  all.innerHTML = ''
+
+  const allTest = document.createElement('main')
+  allTest.classList.add('O_ResultTest')
 
   const resultWrapper = document.createElement('div')
   resultWrapper.classList.add('W_ResultTest')
 
   const finalCount = document.createElement('p')
   finalCount.classList.add('A_FinalCount')
-  finalCount.innerText = `итого: ${resultCount}`
+  finalCount.innerText = `Итог: ${resultCount}`
 
   const resultHeader = document.createElement('h2')
   resultHeader.classList.add('A_ResultHeader')
@@ -61,41 +64,38 @@ function showResult(resultTable) {
   const resultText = document.createElement('p')
   resultText.classList.add('A_ResultText')
 
-  const resultImg = document.createElement('img')
-  resultImg.classList.add('A_ResultImg')
-
   resultWrapper.appendChild(finalCount)
   resultWrapper.appendChild(resultHeader)
   resultWrapper.appendChild(resultText)
-  resultWrapper.appendChild(resultImg)
 
   allTest.appendChild(resultWrapper)
+
+  all.appendChild(allTest)
 
   switch (resultCount) {
     case 0:
       resultHeader.innerText = resultTable[2].header
       resultText.innerText = resultTable[2].paragraph
-      resultImg.src = resultTable[2].image
       break
     case 1:
       resultHeader.innerText = resultTable[2].header
       resultText.innerText = resultTable[2].paragraph
-      resultImg.src = resultTable[2].image
       break
     case 2:
       resultHeader.innerText = resultTable[1].header
       resultText.innerText = resultTable[1].paragraph
-      resultImg.src = resultTable[1].image
       break
     case 3:
       resultHeader.innerText = resultTable[1].header
       resultText.innerText = resultTable[1].paragraph
-      resultImg.src = resultTable[1].image
       break
     case 4:
+      resultHeader.innerText = resultTable[1].header
+      resultText.innerText = resultTable[1].paragraph
+      break
+    case 5:
       resultHeader.innerText = resultTable[0].header
       resultText.innerText = resultTable[0].paragraph
-      resultImg.src = resultTable[0].image
       break
   }
 }
