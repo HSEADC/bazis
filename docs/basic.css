@@ -221,7 +221,7 @@ a{
 }
 
 .S_Test {
-    padding: 140rem 72rem 54rem 72rem;
+    padding: 140rem 69rem 54rem 69rem;
     width: 100%;
 }
 
@@ -247,6 +247,7 @@ a{
   color: #1D2025;
   font-size: 24rem;
   padding: 30rem;
+  justify-content: space-between;
 }
 
 .A_FinalCount, .A_NumberOfQuestion {
@@ -291,6 +292,7 @@ a{
     align-items: flex-start;
     gap: 7rem;
     position: relative;
+    height: 81rem;
 }
 
 
@@ -317,24 +319,54 @@ a{
 
 .Section_Header{
   display: flex;
-    padding: 128rem 72rem 20rem 72rem;
-    width: 100vw;
-    gap: 40rem;
-    flex-direction: column;
+  padding: 128rem 69rem 84rem 69rem;
+  width: 100vw;
+  gap: 36rem;
+  flex-direction: column;
 }
 
 .Section_About{
   display: flex;
-  padding: 128rem 72rem 84rem 72rem;
+  padding: 72em 69rem;
   width: 100vw;
   flex-direction: column;
   align-items: center;
 }
 
-.Section_Nav{
+.Section_Nav, .Section_Article, .Section_Thought, .Section_Test, .Section_ArticleInfo{
   display: flex;
-  padding: 54rem 72rem 54rem 72rem;
+  padding: 54rem 69rem 54rem 69rem;
   width: 100vw;
+}
+
+.Section_Thought, .Section_ArticleInfo{
+  padding: 128rem 69rem 54rem 69rem;
+}
+
+.Section_ArticleInfo{
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24rem;
+}
+
+.art_fon1{
+  height: 264rem;
+}
+
+.Section_Article, .Section_Test{
+    flex-direction: column;
+    gap: 40rem;
+}
+
+.thought_fon{
+  background-image: url(images/5fca2b30b2d52690bad8.svg);
+  display: flex;
+  background-size: cover;
+  height: 485rem;
+  padding: 37rem;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .d_nav{
@@ -344,7 +376,7 @@ a{
   padding: 159rem 85rem 30rem 30rem;
   align-items: center;
   border-radius: 38rem;
-  background: #DFEED7;
+  background: #F4F2EC;
 }
 
 .div_navig{
@@ -354,7 +386,7 @@ a{
   flex-wrap: wrap;
 }
 
-.div_nav{
+.div_nav1, .div_nav2, .div_nav3, .div_nav4{
   display: flex;
   width: 50%;
   width: 50%;
@@ -364,6 +396,18 @@ a{
   border-radius: 38rem;
   background: #CBCBE7;
   justify-content: space-between;
+}
+
+.div_nav2{
+  background: #FCE1A8;
+}
+
+.div_nav3{
+  background: #DFEED7;
+}
+
+.div_nav4{
+  background: #ABCBDE;
 }
 
 .h3_about{
@@ -385,7 +429,7 @@ a{
   transition: all ease 0.1s;
 }
 .a_nav:hover {
-  background-image: url(images/b17257fad7e2b4ce295f.svg);
+  background-image: url(images/54b12c74778746223017.svg);
   background-size: cover;
   transition: all ease 0.3s;
 }
@@ -405,11 +449,11 @@ a{
 #indexForm, #plugForm{
   display: flex;
   width: 858rem;
-  padding: 23rem 30rem 30rem 30rem;
+  padding: 30rem 30rem 40.5rem 30rem;
   flex-direction: column;
   align-items: flex-start;
   background-color: #ABCBDE;
-  border-radius: 38rem 38rem 0 0;
+  border-radius: 38rem 38rem 38rem 0;
 }
 
 #plugForm {
@@ -419,7 +463,7 @@ a{
 
 .Section_Footer{
   display: flex;
-  padding: 54rem 72rem 0 72rem;
+  padding: 54rem 69rem 0 69rem;
   width: 100vw;
 }
 
@@ -430,13 +474,10 @@ a{
 
 #my-form{
   display: flex;
-  width: 645rem;
-  padding: 7.5rem;
+  width: 525rem;
   align-items: center;
-  gap: 7.5rem;
+  margin-top: 24rem;
   border-radius: 50rem;
-  margin-top: 22.5rem;
-  background: #EAE9E6;
   justify-content: space-between;
 }
 
@@ -450,13 +491,13 @@ h4#my-form-status{
   align-items: center;
   flex: 1 0 0;
   border-radius: 50rem;
-  background:#D1DCEE;
+  background:#FFFDF0;
   font-family: 'Manrope';
   font-weight: 400;
   align-self: stretch;
   font-size: 18rem;
   line-height: 24rem;
-  color: #6A7FA4;
+  color: #364C7E;
   border: 2rem solid transparent;
   transition: border ease 0.4s;
 }
@@ -465,7 +506,7 @@ h4#my-form-status{
   transition: border ease 0.8s;
 }
 
-.A_HeaderLink {
+.A_HeaderLink, .A_ThoughtLink, .A_ArticleLink, .A_TestLink {
   text-decoration: none;
   display: flex;
   height: 45rem;
@@ -476,6 +517,7 @@ h4#my-form-status{
   border-radius: 23rem;
   background-color: #1D2025;
   color: #F9F8F4;
+  border: 0rem solid #41599D;
   transition: all ease 0.4s;
   font-family: 'Manrope';
   font-size: 16rem;
@@ -485,9 +527,31 @@ h4#my-form-status{
   line-height: 20rem;
   text-decoration: none;
 }
+
 .A_HeaderLink:hover {
   background-color: #364C7E;
   transition: all ease 0.6s;
+}
+
+.A_ThoughtLink:hover {
+  background-color: #F16F33;
+  transition: all ease 0.6s;
+}
+
+.A_ArticleLink:hover {
+  background-color: #5C5C88;
+  transition: all ease 0.6s;
+}
+
+.A_TestLink:hover {
+  background-color: #82B468;
+  transition: all ease 0.6s;
+}
+
+.O_title{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 #index form button:hover, #plug form button:hover {
@@ -499,9 +563,9 @@ h4#my-form-status{
 #indexHeader, #indexHeaderMob{
   display: flex;
   background-color: #ABCBDE;
-  width: 90vw;
+  width: 90.416vw;
   padding: 15rem 30rem;
-  margin-top: 18rem;
+  margin: 18rem 69rem 0 69rem;
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -533,21 +597,26 @@ h4#my-form-status{
 
 .social{
   display: flex;
-  width: 440rem;
-  padding: 23rem 30rem;
+  width: 444rem;
+  padding: 30rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 14px;
-  border-radius: 39rem;
+  gap: 24rem;
+  border-radius: 39rem 39rem 0 39rem;
   background: #ABCBDE;
 }
 
 .social_h4{
-  font-size: 22rem;
+  font-size: 30rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 36rem;
   width: 300rem;
+}
+
+.socimg{
+  height: 58rem;
+  width: 58rem;
 }
 
 .social_row{
@@ -566,7 +635,7 @@ h4#my-form-status{
 .soc{
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12rem;
 }
 
 #plugMedia{
@@ -621,17 +690,21 @@ h4#my-form-status{
   transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
 }
 
-.M_Header {
+.M_Header, .M_HeaderTest {
   display: flex;
-  margin: 140rem 72rem 54rem 72rem;
+  margin: 126rem 69rem 0 69rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  height: 482px;
+  height: 450rem;
   align-self: stretch;
-  background-image: url(images/805202a46e65d7443168.svg);
+  background-image: url(images/f3c2896d774b3b14de5b.svg);
   background-size: 100% 100%;
+}
+
+.M_HeaderTest{
+  background-image: url(images/492d3b25fc5a63449e4b.svg);
 }
 
 #plugForm p{
@@ -652,15 +725,10 @@ nav {
 
 .S_IndexSection{
   display: flex;
-  margin: 0rem 72rem 54rem 72rem;
-  flex-direction: column;
-  height: 448.2rem;
-  align-items: flex-start;
-  gap: 3.25rem;
-  align-self: stretch;
-  background-image: url(images/b32b454bf00c41cc07a0.svg);
-  background-size: contain;
-  justify-content: center;
+}
+
+.test_fon1{
+  width: 525rem;
 }
 
 .C_IndexSectionCards{
@@ -668,7 +736,6 @@ nav {
   gap: 24rem;
   flex-direction: column;
   width: 600rem;
-  margin-left: 480rem;
 }
 
 .M_TestAnswerMessage input{
@@ -680,7 +747,7 @@ nav {
 
 .C_IndexSectionCard{
   display: flex;
-  gap: 16rem;
+  gap: 18rem;
   flex-direction: column;
 }
 
@@ -696,9 +763,8 @@ nav {
 
 .O_Articles {
   display: flex;
-  margin: 0rem 72rem 54rem 72rem;
   flex-wrap: wrap;
-  gap: 1.3vw;
+  gap: 30rem;
 }
 
 .C_IndexSectionCardDiv{
@@ -711,14 +777,13 @@ nav {
 }
 
 .O_IndexSectionCard {
-    width: 414rem;
-    height: 296rem;
-    background-color: #EAE9E6;
-    border-radius: 37rem;
-    padding: 22rem 30rem;
-    display: flex;
-    flex-direction: column;
-    gap: 12rem;
+  width: 414rem;
+  background-color: #EAE9E6;
+  border-radius: 37rem;
+  padding: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 14rem;
 }
 
 .A_IndexH3 {
@@ -729,18 +794,113 @@ nav {
   color: #1D2025;
 }
 
-.C_IndexSectionCardTags {
+.C_IndexSectionCardTags, .C_IndexSectionCardTagsTest, .C_IndexSectionCardTagsArtic {
   padding: 22rem;
   display: flex;
   gap: 10rem;
   flex-direction: row;
 }
 
-.A_IndexSectionCardTag {
-  padding: 8rem 15rem;
-  color: #1D2025;
+.C_IndexSectionCardTagsTest, .C_IndexSectionCardTagsArtic{
+  padding: 0;
+}
+
+.O_IndexSectionCardTest, .O_IndexSectionCardArt, .O_IndexSectionCardArtInf{
+  display: flex;
+  padding: 30rem;
+  gap: 40rem;
+  background-color: #DFEED7;
+  flex-direction: column;
+  border-radius: 38rem;
+  width: stretch;
+}
+
+.InfArt{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.O_IndexSectionCardArt{
   background-color: #CBCBE7;
-  border-radius: 20rem;
-  line-height: 18rem;
+  width: 747rem;
+  gap: 37rem;
+}
+
+.O_IndexSectionCardArtInf{
+  background-color: #F4F2EC;
+  width: 747rem;
+  gap: 36rem;
+}
+
+.h3_test_cardsArt{
+  width: 680rem;
+}
+
+.h4_test_cardsArt{
+  font-size: 30rem;
+  line-height: 36rem;
+  width: 680rem;
+}
+
+.A_IndexSectionCardTag, .A_IndexSectionCardTagTest, .A_IndexSectionCardTagArtic, .A_IndexSectionCardTagArt{
   font-size: 12rem;
+  line-height: 18rem;
+  display: flex;
+  padding: 8rem 15rem;
+  align-items: center;
+  border-radius: 11rem;
+  background: #CBCBE7;
+}
+
+.A_IndexSectionCardTagTest{
+  background: #82B468;
+}
+
+.A_IndexSectionCardTagArtic{
+  background: #F4F2EC;
+}
+
+.A_IndexSectionCardTagArt{
+  background: #5C5C88;
+  color: #DFEED7;
+}
+
+.time{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clock{
+  height: 28rem;
+}
+
+.C_Tests{
+  display: flex;
+  gap: 30rem;
+}
+
+.C_Test{
+  display: flex;
+}
+
+.test_fon2, .test_fon3{
+  width: 222rem;
+}
+
+.O_TestCards{
+  display: flex;
+  background-color: #F4F2EC;
+  border-radius: 38rem;
+  flex-direction: column;
+  padding: 30rem;
+  align-items: flex-start;
+  gap: 18rem;
+}
+
+.O_titletages{
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
 }

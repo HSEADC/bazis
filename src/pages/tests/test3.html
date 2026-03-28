@@ -3,15 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Тест №1</title>
+    <link rel="icon" type="image/x-icon" href="../../images/icon.ico"/>
+    <title>Тест: Простой тест на тему полезных привычек</title>
   </head>
-  <body>
-    <h1>Тест №3. «О чём говорит твоя тревога?»</h1>
-    <ul class="hr">
-      <li><a href="../tests/test1.html">Следующий тест</a></li>
-      <li><a href="../articles/article3.html">Прочитать статью по теме</a></li>
-      <li><a href="../tests.html">Все тесты</a></li>
-      <li><a href="../../index.html">На главную</a></li>
-    </ul>
+  <body id="index">
+    <div id="indexHeader">
+      <a href="../../images/index.html"><img class="logo" src="../../images/logo.svg" alt=""></a>
+      <div id="indexN">
+        <a class="nav_a" href="../articles.html">Статьи</a>
+        <a class="nav_a" href="../thought.html">Мысль дня</a>
+        <a class="nav_a" href="../tests.html">Тесты</a>
+        <a class="nav_a" href="../rituals.html">Практики</a>
+      </div>
+    </div>
+  <section class="S_Test">
+      <main class="O_Test">
+        <section class="W_TestTextSection">
+          <div class="W_Test">
+            <p class="A_NumberOfQuestion"></p>
+            <h3 class="A_TestQuestion"></h3>
+          </div>
+          <div class="C_TestAnswerMessages">
+            <div class="M_TestAnswerMessage">
+              <input type="checkbox" />
+              <span class="A_Checkbox"></span>
+              <label class="A_TestAnswerText"></label>
+            </div>
+
+            <div class="M_TestAnswerMessage">
+              <input type="checkbox" />
+              <span class="A_Checkbox"></span>
+              <label class="A_TestAnswerText"></label>
+            </div>
+
+            <div class="M_TestAnswerMessage">
+              <input type="checkbox" />
+              <span class="A_Checkbox"></span>
+              <label class="A_TestAnswerText"></label>
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+    <section class="Section_Footer">
+      <div id="indexForm">
+        <h3>Будь в курсе новостей!</h3>
+        <form id="my-form" action="https://formspree.io/f/mdkwyjlo" method="POST">
+          <input type="email" name="email" />
+          <button id="my-form-button" class="A_HeaderLink">Отправить</button>
+        </form>
+        <h4 id="my-form-status"></h4>
+      </div>
+      <script>
+        var form = document.getElementById("my-form");
+      
+        async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Спасибо за подписку!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Ой, возникла какая-то проблема. Попробуйте ещё раз"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Ой, возникла какая-то проблема. Попробуйте ещё раз"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+    </script>
+    <div class="social">
+        <h4 class="social_h4">Мы в соц сетях:</h4>
+        <div class="soc">
+          <img class="socimg" src="../../images/tg.svg" alt="">
+          <img class="socimg" src="../../images/vk.svg" alt="">
+          <img class="socimg" src="../../images/dzen.svg" alt="">
+        </div>
+      </div>
+  </section>
   </body>
 </html>

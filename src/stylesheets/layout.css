@@ -67,17 +67,9 @@ a{
   align-items: center;
 }
 
-.Section_Header{
-  display: flex;
-    padding: 128rem 72rem 20rem 72rem;
-    width: 100vw;
-    gap: 40rem;
-    flex-direction: column;
-}
-
 .Section_About{
   display: flex;
-  padding: 128rem 72rem 84rem 72rem;
+  padding: 126rem 69rem 40rem 69rem;
   width: 100vw;
   flex-direction: column;
   align-items: center;
@@ -180,18 +172,6 @@ a{
   margin-top: 10rem;
 }
 
-#my-form{
-  display: flex;
-  width: 645rem;
-  padding: 7.5rem;
-  align-items: center;
-  gap: 7.5rem;
-  border-radius: 50rem;
-  margin-top: 22.5rem;
-  background: #EAE9E6;
-  justify-content: space-between;
-}
-
 h4#my-form-status{
   margin: 12rem 0 0 24rem;
   color: #41599D;
@@ -246,20 +226,6 @@ h4#my-form-status{
   background-color: #41599D;
   border: 0rem solid #41599D;
   transition: all ease 0.8s;
-}
-
-#indexHeader, #indexHeaderMob{
-  display: flex;
-  background-color: #ABCBDE;
-  width: 90vw;
-  padding: 15rem 30rem;
-  margin-top: 18rem;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  border-radius: 15rem;
-  height: 68rem;
-  z-index: 2;
 }
 
 #indexHeaderMob{
@@ -421,27 +387,6 @@ nav {
 }
 .text {
   color: blue;
-}
-
-.S_IndexSection{
-  display: flex;
-  margin: 0rem 72rem 54rem 72rem;
-  flex-direction: column;
-  height: 448.2rem;
-  align-items: flex-start;
-  gap: 3.25rem;
-  align-self: stretch;
-  background-image: url(/src/images/test_fon1.svg);
-  background-size: contain;
-  justify-content: center;
-}
-
-.C_IndexSectionCards{
-  display: flex;
-  gap: 24rem;
-  flex-direction: column;
-  width: 600rem;
-  margin-left: 480rem;
 }
 
 .C_IndexSectionCardTags{

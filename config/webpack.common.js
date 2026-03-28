@@ -7,8 +7,10 @@ module.exports = {
     index: './src/javascripts/index.js',
     styleguide: './src/javascripts/styleguide.js',
     articles: './src/javascripts/articles.js',
-    theory: './src/javascripts/theory.js',
+    thought: './src/javascripts/thought.js',
     test1: './src/pages/tests/test1.js',
+    test2: './src/pages/tests/test2.js',
+    test3: './src/pages/tests/test3.js',
     basic: './src/javascripts/basic.js'
   },
   output: {

@@ -56,11 +56,55 @@
     <section class="M_Header">
         <h1 class="A_MainHeader">Статьи</h1>
     </section>
+    <section class="Section_Article">
+      <div class="O_titletages">
+        <h4>Поиск по тегам</h4>
+        <div class="C_IndexSectionCardTagsArtic">
+              <span class="A_IndexSectionCardTag">#все</span>
+              <span class="A_IndexSectionCardTagArtic">#чувства</span>
+              <span class="A_IndexSectionCardTagArtic">#тишина</span>
+              <span class="A_IndexSectionCardTagArtic">#уединение</span>
+              <span class="A_IndexSectionCardTagArtic">#одиночество</span>
+              <span class="A_IndexSectionCardTagArtic">#опора</span>
+              <span class="A_IndexSectionCardTagArtic">#равновесие</span>
+        </div>
+      </div>
     <section class="O_Articles"></section>
+    </section>
+    <section class="Section_Test">
+      <div class="O_title">
+        <h4>Узнай себя лучше</h4>
+        <a href="./tests.html">
+          <button class="A_TestLink">Все тесты
+            <img src="../images/arrow_button.svg" alt="">
+          </button>
+        </a>
+      </div>
+      <section class="S_IndexSection">
+        <img class="test_fon1" src="../images/test_fon1.svg" alt="">
+        <div class="O_IndexSectionCardTest">
+          <div class="time">
+            <div class="C_IndexSectionCardTagsTest">
+              <span class="A_IndexSectionCardTagTest">#опора</span>
+              <span class="A_IndexSectionCardTagTest">#равновесие</span>
+          </div>
+            <img class="clock" src="../images/M_Clock.svg" alt="">
+          </div>
+          <div class="C_IndexSectionCards">
+            <div class="C_IndexSectionCard">
+              <h3 class="h3_test_cards">Есть ли у вас внутренняя опора?</h3>
+              <p>Этот тест поможет понять, насколько вы опираетесь на себя, свои ценности <br>и ощущения — и что можно укрепить.</p>
+            </div>
+            <a href="./tests/test1.html">
+              <button class="A_TestLink">Пройти тест</button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
     <section class="Section_Footer">
       <div id="indexForm">
         <h3>Будь в курсе новостей!</h3>
-        <p>Оставь почту — и первым узнаешь, когда мы начнем делиться тихими смыслами и простыми опорами.</p>
         <form id="my-form" action="https://formspree.io/f/mdkwyjlo" method="POST">
           <input type="email" name="email" />
           <button id="my-form-button" class="A_HeaderLink">Отправить</button>
@@ -99,20 +143,14 @@
     }
     form.addEventListener("submit", handleSubmit)
     </script>
-    <div class="div_footer">
-      <div class="social">
+    <div class="social">
         <h4 class="social_h4">Мы в соц сетях:</h4>
         <div class="soc">
-          <img src="../images/tg.svg" alt="">
-          <img src="../images/vk.svg" alt="">
-          <img src="../images/dzen.svg" alt="">
+          <img class="socimg" src="../images/tg.svg" alt="">
+          <img class="socimg" src="../images/vk.svg" alt="">
+          <img class="socimg" src="../images/dzen.svg" alt="">
         </div>
       </div>
-      <div class="social_row">
-        <a href="../index.html"><img class="logo" src="../images/logo.svg" alt=""></a>
-        <h4 class="social_h4">медиа про внутренние опоры</h4>
-      </div>
-    </div>
   </section>
   </body>
 </html>
