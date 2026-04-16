@@ -1,0 +1,1 @@
+(()=>{var e,t,n;e=[{title:""}],t=document.querySelector(".A_SearchInput"),n=document.querySelector(".A_SearchButton"),t.addEventListener("input",function(){hadleSearchInput(e,t,n)}),n.addEventListener("click",function(){!function(e,t){t.value,document.querySelector(".C_Dropdown")}(0,t)})})();
