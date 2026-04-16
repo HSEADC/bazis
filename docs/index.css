@@ -353,8 +353,8 @@ body {
   margin: 0;
 }
 h1 {
-  font-size: 126rem;
-  line-height: normal;
+  font-size: 96rem;
+  line-height: 113rem;
   color: #1D2025;
 }
 h2 {
@@ -867,7 +867,7 @@ h4#my-form-status{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 15rem;
   height: 450rem;
   align-self: stretch;
   background-image: url(images/83d9c97d6f5bfbff688d.svg);
@@ -1074,6 +1074,43 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 20rem;
+}
+
+.W_SearchContainer{
+  margin-bottom: 27rem;
+}
+
+.A_SearchInput {
+  border-radius: 50rem;
+  width: 384rem;
+  height: 45rem;
+  border: none;
+  padding: 12rem 18rem;
+  position: relative;
+  z-index: 2;
+  font-size: 17rem;
+  font-family: 'Manrope';
+  color: #5C5C88;
+}
+
+.A_SearchInput:focus {
+outline-color: #5C5C88;
+border-color: #5C5C88;
+}
+
+.A_SearchButton{
+  padding: 10rem 20rem;
+  font-size: 20rem;
+  background-color: white;
+  border-radius: 20rem;
+  border: 2rem solid #5C5C88;
+  color: #5C5C88;
+  user-select: none;
+  cursor: pointer;
+}
+
+.A_SearchButton[disabled] {
+  filter: aravscale(1);
 }
 * {
   box-sizing: border-box;

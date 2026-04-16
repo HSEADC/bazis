@@ -14,8 +14,8 @@ body {
   margin: 0;
 }
 h1 {
-  font-size: 126rem;
-  line-height: normal;
+  font-size: 96rem;
+  line-height: 113rem;
   color: #1D2025;
 }
 h2 {
@@ -528,7 +528,7 @@ h4#my-form-status{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 15rem;
   height: 450rem;
   align-self: stretch;
   background-image: url(/src/images/st.svg);
@@ -735,4 +735,79 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 20rem;
+}
+
+.W_SearchContainer{
+  margin-bottom: 27rem;
+}
+
+.A_SearchInput {
+  border-radius: 50rem;
+  width: 384rem;
+  height: 45rem;
+  border: none;
+  padding: 12rem 18rem;
+  position: relative;
+  font-size: 17rem;
+  font-family: 'Manrope';
+  color: #5C5C88;
+}
+
+.A_SearchInput:focus {
+outline-color: #5C5C88;
+border-color: #5C5C88;
+}
+
+.A_SearchButton{
+  padding: 10rem 20rem;
+  font-size: 20rem;
+  background-color: white;
+  border-radius: 20rem;
+  border: 2rem solid #5C5C88;
+  color: #5C5C88;
+  user-select: none;
+  cursor: pointer;
+}
+
+.A_SearchButton[disabled] {
+  filter: grayscale(1);
+}
+
+.A_SearchResultHeader {
+  font-weight: 500;
+}
+
+.M_SearchResult {
+  text-decoration: none;
+  color: var(--button-hover-color);
+  font-size: 23rem;
+  line-height: 26rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  border-top: 2rem solid var(--button-basic-color);
+  padding: 12rem 18rem;
+}
+.M_SearchResult:nth-of-type(1) {
+  border-top: none;
+}
+.M_SearchResult:hover {
+  background-color: #eee;
+}
+
+.C_Dropdown {
+  display: none;
+  flex-direction: column;
+  width: 384rem;
+  border: 2rem solid var(--button-basic-color);
+  position: absolute;
+  z-index: 1;
+  border-radius: 18rem;
+  padding-top: 12rem;
+  background-color: white;
+  overflow: hidden;
+}
+
+.Q_Hightlight {
+  background-color: gold;
 }
