@@ -45,6 +45,10 @@ function createArticlesTeasersCards(content) {
   content.forEach((stroke) => {
     let { title, description, tags, link, image } = stroke
 
+    const articleCardLink = document.createElement('a')
+    articleCardLink.classList.add('C_IndexSectionCardDiv')
+    articleCardLink.href = link
+
     const articleTags = document.createElement('div')
     articleTags.classList.add('C_IndexSectionCardTags')
 
@@ -56,6 +60,13 @@ function createArticlesTeasersCards(content) {
       articleTags.appendChild(articleTag)
     })
 
+    const articleImg = document.createElement('div')
+    articleImg.classList.add('C_IndexSectionCardImg')
+    articleImg.style.backgroundImage = `url(${image})`
+
+    const articleContent = document.createElement('div')
+    articleContent.classList.add('O_IndexSectionCard')
+
     const articleHeader = document.createElement('h3')
     articleHeader.classList.add('A_IndexH3')
     articleHeader.innerText = title
@@ -64,25 +75,14 @@ function createArticlesTeasersCards(content) {
     articleText.classList.add('A_IndexText')
     articleText.innerText = description
 
-    const articleCard = document.createElement('a')
-    articleCard.classList.add('O_IndexSectionCard')
-    articleCard.href = link
-
-    const articleImg = document.createElement('div')
-    articleImg.classList.add('C_IndexSectionCardImg')
-    articleImg.style.backgroundImage = `url(${image})`
-
-    const articleDiv = document.createElement('div')
-    articleDiv.classList.add('C_IndexSectionCardDiv')
-
     articleImg.appendChild(articleTags)
 
-    articleCard.appendChild(articleHeader)
-    articleCard.appendChild(articleText)
+    articleContent.appendChild(articleHeader)
+    articleContent.appendChild(articleText)
 
-    articleDiv.appendChild(articleImg)
-    articleDiv.appendChild(articleCard)
+    articleCardLink.appendChild(articleImg)
+    articleCardLink.appendChild(articleContent)
 
-    document.querySelector('.O_Articles').appendChild(articleDiv)
+    document.querySelector('.O_Articles').appendChild(articleCardLink)
   })
 }

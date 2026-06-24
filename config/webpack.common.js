@@ -12,8 +12,17 @@ module.exports = {
     test1: './src/pages/tests/test1.js',
     test2: './src/pages/tests/test2.js',
     test3: './src/pages/tests/test3.js',
+    test4: './src/pages/tests/test4.js',
+    test5: './src/pages/tests/test5.js',
+    test6: './src/pages/tests/test6.js',
+    test7: './src/pages/tests/test7.js',
     basic: './src/javascripts/basic.js',
-    searchArticles: './src/javascripts/searchArticles.js'
+    searchArticles: './src/javascripts/searchArticles.js',
+    searchTests: './src/javascripts/searchTests.js',
+    searchRituals: './src/javascripts/searchRituals.js',
+    filterTests: './src/javascripts/filterTests.js',
+    filterArticles: './src/javascripts/filterArticles.js',
+    filterRituals: './src/javascripts/filterRituals.js'
   },
   output: {
     path: path.resolve('.', 'docs'),

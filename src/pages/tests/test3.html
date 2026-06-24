@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="../../images/icon.ico"/>
-    <title>Тест: Простой тест на тему полезных привычек</title>
+    <title>Тест: Ты устал или просто потерял контакт с собой?</title>
   </head>
   <body id="index">
     <div id="indexHeader">
-      <a href="../../images/index.html"><img class="logo" src="../../images/logo.svg" alt=""></a>
+      <a href="../../index.html"><img class="logo" src="../../images/logo.svg" alt=""></a>
       <div id="indexN">
         <a class="nav_a" href="../articles.html">Статьи</a>
         <a class="nav_a" href="../thought.html">Мысль дня</a>
@@ -46,52 +46,16 @@
       </main>
     </section>
     <section class="Section_Footer">
-      <div id="indexForm">
-        <h3>Будь в курсе новостей!</h3>
-        <form id="my-form" action="https://formspree.io/f/mdkwyjlo" method="POST">
-          <input type="email" name="email" />
-          <button id="my-form-button" class="A_HeaderLink">Отправить</button>
-        </form>
-        <h4 id="my-form-status"></h4>
+      <div class="C_FooterImput">
+          <a href="../../index.html"><img class="footer_logo" src="../../images/logo.svg" alt=""></a>
+        <p>Анпилогова / Пимкина / Аманова</p>
       </div>
-      <script>
-        var form = document.getElementById("my-form");
-      
-        async function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("my-form-status");
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-          status.innerHTML = "Спасибо за подписку!";
-          form.reset()
-        } else {
-          response.json().then(data => {
-            if (Object.hasOwn(data, 'errors')) {
-              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-            } else {
-              status.innerHTML = "Ой, возникла какая-то проблема. Попробуйте ещё раз"
-            }
-          })
-        }
-      }).catch(error => {
-        status.innerHTML = "Ой, возникла какая-то проблема. Попробуйте ещё раз"
-      });
-    }
-    form.addEventListener("submit", handleSubmit)
-    </script>
     <div class="social">
-        <h4 class="social_h4">Мы в соц сетях:</h4>
+        <p>Мы в соц сетях:</p>
         <div class="soc">
-          <img class="socimg" src="../../images/tg.svg" alt="">
-          <img class="socimg" src="../../images/vk.svg" alt="">
-          <img class="socimg" src="../../images/dzen.svg" alt="">
+          <a href="https://t.me/s/bazisvnutri"><img class="socimg" src="../../images/tg.svg" alt=""></a>
+          <a href="https://vk.ru/club233584161"><img class="socimg" src="../../images/vk.svg" alt=""></a>
+          <a href=""><img class="socimg" src="../../images/dzen.svg" alt=""></a>
         </div>
       </div>
   </section>

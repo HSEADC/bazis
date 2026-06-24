@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,56 +53,230 @@
         <a class="nav_a" href="./rituals.html">Практики</a>
       </div>
     </div>
-    <section class="M_Header">
+    <section class="M_HeaderRituals">
         <h1 class="A_MainHeader">Практики</h1>
+        <div class="W_SearchContainer">
+          <input type="text" class="A_SearchInput_Rituals" placeholder="Поиск по практикам и ритуалам" />
+          <button class="A_SearchButton">
+            <img class="search_png" src="../images/Search.png" alt="">
+          </button>
+          <div class="C_Dropdown"></div>
+        </div>
       </section>
-    <section class="Section_Footer">
-      <div id="indexForm">
-        <h3>Будь в курсе новостей!</h3>
-        <form id="my-form" action="https://formspree.io/f/mdkwyjlo" method="POST">
-          <input type="email" name="email" />
-          <button id="my-form-button" class="A_HeaderLink">Отправить</button>
-        </form>
-        <h4 id="my-form-status"></h4>
+      <section class="Section_Article">
+      <div class="O_titletages">
+        <h4>Поиск по тегам</h4>
+        <div class="C_IndexSectionCardTagsArtic">
+              <span class="A_IndexSectionCardTag">все</span>
+              <span class="A_IndexSectionCardTagArtic">перед сном</span>
+              <span class="A_IndexSectionCardTagArtic">после тяжёлого дня</span>
+              <span class="A_IndexSectionCardTagArtic">не можешь остановить мысли</span>
+              <span class="A_IndexSectionCardTagArtic">когда тревожно</span>
+              <span class="A_IndexSectionCardTagArtic">после расставания</span>
+        </div>
       </div>
-      <script>
-        var form = document.getElementById("my-form");
-      
-        async function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("my-form-status");
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-          status.innerHTML = "Спасибо за подписку!";
-          form.reset()
-        } else {
-          response.json().then(data => {
-            if (Object.hasOwn(data, 'errors')) {
-              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-            } else {
-              status.innerHTML = "Ой, возникла какая-то проблема. Попробуйте ещё раз"
-            }
-          })
-        }
-      }).catch(error => {
-        status.innerHTML = "Ой, возникла какая-то проблема. Попробуйте ещё раз"
-      });
-    }
-    form.addEventListener("submit", handleSubmit)
-    </script>
+      <div class="C_Rituals">
+        <div class="O_TestCards">
+            <div class="d_clock">
+              <img class="clock" src="../images/M_Clock.svg" alt="">
+              <p class="p_clock">10 минут</p>
+            </div>
+            <h4 class="A_IndexH4_rit">Письмо без отправки</h4>
+            <p class="A_p_rit">Хочется всё сказать человеку, но сначала важно услышать, что именно болит внутри.</p>
+            <div class="C_IndexSectionCardTagsRitual">
+              <span class="A_IndexSectionCardTagTest">не можешь остановить мысли</span>
+              <span class="A_IndexSectionCardTagTest">после расставания</span>
+          </div>
+        </div>
+        <div class="O_TestCards">
+            <div class="d_clock">
+              <img class="clock" src="../images/M_Clock.svg" alt="">
+              <p class="p_clock">1 минута</p>
+            </div>
+            <h4 class="A_IndexH4_rit">Три тихих вдоха</h4>
+            <p class="A_p_rit">Когда тревога подступает слишком близко, начни не с решения, а с дыхания.</p>
+            <div class="C_IndexSectionCardTagsRitual">
+              <span class="A_IndexSectionCardTagTest">когда тревожно</span>
+          </div>
+        </div>
+        <div class="O_TestCards">
+            <div class="d_clock">
+              <img class="clock" src="../images/M_Clock.svg" alt="">
+              <p class="p_clock">5 минут</p>
+            </div>
+            <h4 class="A_IndexH4_rit">Вечернее отпускание</h4>
+            <p class="A_p_rit">День уже закончился, но мысли всё ещё держат тебя внутри его напряжения.</p>
+            <div class="C_IndexSectionCardTagsRitual">
+              <span class="A_IndexSectionCardTagTest">перед сном</span>
+              <span class="A_IndexSectionCardTagTest">после тяжёлого дня</span>
+          </div>
+        </div>
+        <div class="O_TestCards">
+            <div class="d_clock">
+              <img class="clock" src="../images/M_Clock.svg" alt="">
+              <p class="p_clock">5 минут</p>
+            </div>
+            <h4 class="A_IndexH4_rit">Список лишнего шума</h4>
+            <p class="A_p_rit">Иногда голова переполнена не проблемами, а всем, что давно просит выйти наружу.</p>
+            <div class="C_IndexSectionCardTagsRitual">
+              <span class="A_IndexSectionCardTagTest">не можешь остановить мысли</span>
+              <span class="A_IndexSectionCardTagTest">когда тревожно</span>
+          </div>
+        </div>
+        <div class="O_TestCards">
+            <div class="d_clock">
+              <img class="clock" src="../images/M_Clock.svg" alt="">
+              <p class="p_clock">3 минуты</p>
+            </div>
+            <h4 class="A_IndexH4_rit">Пять точек опоры</h4>
+            <p class="A_p_rit">Когда внутри неустойчиво, можно вернуться к простым ощущениям тела.</p>
+            <div class="C_IndexSectionCardTagsRitual">
+              <span class="A_IndexSectionCardTagTest">когда тревожно</span>
+          </div>
+        </div>
+        <div class="O_TestCards">
+            <div class="d_clock">
+              <img class="clock" src="../images/M_Clock.svg" alt="">
+              <p class="p_clock">8 минут</p>
+            </div>
+            <h4 class="A_IndexH4_rit">Ритуал закрытого дня</h4>
+            <p class="A_p_rit">После тяжёлого дня важно не просто лечь спать, а мягко выйти из напряжения.</p>
+            <div class="C_IndexSectionCardTagsRitual">
+              <span class="A_IndexSectionCardTagTest">после тяжёлого дня</span>
+              <span class="A_IndexSectionCardTagTest">перед сном</span>
+          </div>
+        </div>
+        <div class="O_TestCards">
+            <div class="d_clock">
+              <img class="clock" src="../images/M_Clock.svg" alt="">
+              <p class="p_clock">10 минут</p>
+            </div>
+            <h4 class="A_IndexH4_rit">Разговор с собой</h4>
+            <p class="A_p_rit">Если внутри много чувств, попробуй не спорить с ними, а задать им вопрос.</p>
+            <div class="C_IndexSectionCardTagsRitual">
+              <span class="A_IndexSectionCardTagTest">когда тревожно</span>
+              <span class="A_IndexSectionCardTagTest">после расставания</span>
+          </div>
+        </div>
+        <div class="O_TestCards">
+            <div class="d_clock">
+              <img class="clock" src="../images/M_Clock.svg" alt="">
+              <p class="p_clock">5 минут</p>
+            </div>
+            <h4 class="A_IndexH4_rit">Тёплая пауза, когда сил мало</h4>
+            <p class="A_p_rit">Когда сил мало, не нужно сразу собираться — сначала можно просто согреться.</p>
+            <div class="C_IndexSectionCardTagsRitual">
+              <span class="A_IndexSectionCardTagTest">после тяжёлого дня</span>
+          </div>
+        </div>
+        <div class="O_TestCards">
+            <div class="d_clock">
+              <img class="clock" src="../images/M_Clock.svg" alt="">
+              <p class="p_clock">6 минут</p>
+            </div>
+            <h4 class="A_IndexH4_rit">Мысли на бумаге</h4>
+            <p class="A_p_rit">Если мысли ходят по кругу, дай им место вне головы, чтобы стало тише.</p>
+            <div class="C_IndexSectionCardTagsRitual">
+              <span class="A_IndexSectionCardTagTest">не можешь остановить мысли</span>
+          </div>
+        </div>
+        <div class="O_TestCards">
+            <div class="d_clock">
+              <img class="clock" src="../images/M_Clock.svg" alt="">
+              <p class="p_clock">12 минут</p>
+            </div>
+            <h4 class="A_IndexH4_rit">Мягкое прощание</h4>
+            <p class="A_p_rit">После расставания важно отпускать не сразу всё, а маленькими честными шагами.</p>
+            <div class="C_IndexSectionCardTagsRitual">
+              <span class="A_IndexSectionCardTagTest">после расставания</span>
+          </div>
+        </div>
+        <div class="O_TestCards">
+            <div class="d_clock">
+              <img class="clock" src="../images/M_Clock.svg" alt="">
+              <p class="p_clock">5 минут</p>
+            </div>
+            <h4 class="A_IndexH4_rit">Комната без тревоги</h4>
+            <p class="A_p_rit">Перед сном можно создать маленькое пространство, где от тебя ничего не требуется.</p>
+            <div class="C_IndexSectionCardTagsRitual">
+              <span class="A_IndexSectionCardTagTest">перед сном</span>
+              <span class="A_IndexSectionCardTagTest">когда тревожно</span>
+          </div>
+        </div>
+        <div class="O_TestCards">
+            <div class="d_clock">
+              <img class="clock" src="../images/M_Clock.svg" alt="">
+              <p class="p_clock">4 минуты</p>
+            </div>
+            <h4 class="A_IndexH4_rit">Mаленький порядок</h4>
+            <p class="A_p_rit">Когда день развалился, начни с одного простого действия, которое возвращает контроль.</p>
+            <div class="C_IndexSectionCardTagsRitual">
+              <span class="A_IndexSectionCardTagTest">после тяжёлого дня</span>
+              <span class="A_IndexSectionCardTagTest">когда тревожно</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Section_Test">
+      <div class="O_title">
+        <h4>Узнай себя лучше</h4>
+        <a href="./tests.html">
+          <button class="A_TestLink">Все тесты
+            <img src="../images/arrow_button.svg" alt="">
+          </button>
+        </a>
+      </div>
+      <section class="S_IndexSection">
+        <img class="test_fon1" src="../images/test_fon1.svg" alt="">
+        <div class="O_IndexSectionCardTest">
+          <div class="time">
+            <div class="C_IndexSectionCardTagsTest">
+              <span class="A_IndexSectionCardTagTest">самоценность</span>
+              <span class="A_IndexSectionCardTagTest">тревога</span>
+          </div>
+          <div class="d_clock">
+            <img class="clock" src="../images/M_Clock.svg" alt="">
+            <p class="p_clock">3 минуты</p>
+          </div>
+          </div>
+          <div class="C_IndexSectionCards">
+            <div class="C_IndexSectionCard">
+              <h3 class="h3_test_cards">Есть ли у вас внутренняя опора?</h3>
+              <p>Тест поможет понять, насколько ты умеешь опираться на себя, свои ощущения и ценности, а не только на мнение других.</p>
+            </div>
+            <a href="./tests/test1.html">
+              <button class="A_TestLink">Пройти тест</button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="Section_Article">
+      <div class="O_title">
+        <h4>Полезные статьи</h4>
+        <a href="../pages/articles.html">
+          <button class="A_ArticleLink">Все статьи
+            <img src="../images/arrow_button.svg" alt="">
+          </button>
+        </a>
+      </div>
+      <section class="O_Articles">
+        <a class="C_IndexSectionCardDiv" href="https://hseadc.github.io/bazis/pages/articles/article1.html"><div class="C_IndexSectionCardImg" style="background-image: url(&quot;https://raw.githubusercontent.com/HSEADC/bazis/12aa7f0ada2ac8703fb5731dde65bef415c96afa/src/images/article_img3.svg&quot;);"><div class="C_IndexSectionCardTags"><span class="A_IndexSectionCardTag" style="background-color: rgb(223, 238, 215); color: rgb(29, 32, 37);">усталость</span></div></div><div class="O_IndexSectionCard"><h3 class="A_IndexH3">Как тело первым замечает усталость</h3><p class="A_IndexText">О том, как заметить усталость раньше, чем она превратится в раздражение, пустоту и истощение.</p></div></a>
+        <a class="C_IndexSectionCardDiv" href="https://hseadc.github.io/bazis/pages/articles/article2.html"><div class="C_IndexSectionCardImg" style="background-image: url(&quot;https://raw.githubusercontent.com/HSEADC/bazis/12aa7f0ada2ac8703fb5731dde65bef415c96afa/src/images/article_img8.svg&quot;);"><div class="C_IndexSectionCardTags"><span class="A_IndexSectionCardTag" style="background-color: rgb(203, 203, 231); color: rgb(29, 32, 37);">тревога</span><span class="A_IndexSectionCardTag" style="background-color: rgb(250, 213, 219); color: rgb(29, 32, 37);">отношения</span></div></div><div class="O_IndexSectionCard"><h3 class="A_IndexH3">Как вернуться после трудного разговора</h3><p class="A_IndexText">О том, как собрать себя после диалога, который оставил тревогу, вину или внутреннюю дрожь.</p></div></a>
+        <a class="C_IndexSectionCardDiv" href="https://hseadc.github.io/bazis/pages/articles/article3.html"><div class="C_IndexSectionCardImg" style="background-image: url(&quot;https://raw.githubusercontent.com/HSEADC/bazis/12aa7f0ada2ac8703fb5731dde65bef415c96afa/src/images/article_img2.svg&quot;);"><div class="C_IndexSectionCardTags"><span class="A_IndexSectionCardTag" style="background-color: rgb(250, 213, 219); color: rgb(29, 32, 37);">отношения</span><span class="A_IndexSectionCardTag" style="background-color: rgb(203, 203, 231); color: rgb(29, 32, 37);">тревога</span></div></div><div class="O_IndexSectionCard"><h3 class="A_IndexH3">Почему близость иногда пугает нас</h3><p class="A_IndexText">О том, как отношения могут одновременно давать тепло и вызывать желание отдалиться, чтобы сохранить себя.</p></div></a>
+    </section>
+    </section>
+    <section class="Section_Footer">
+      <div class="C_FooterImput">
+          <a href="../index.html"><img class="footer_logo" src="../images/logo.svg" alt=""></a>
+        <p>Анпилогова / Пимкина / Аманова</p>
+      </div>
     <div class="social">
-        <h4 class="social_h4">Мы в соц сетях:</h4>
+        <p>Мы в соц сетях:</p>
         <div class="soc">
-          <img class="socimg" src="../images/tg.svg" alt="">
-          <img class="socimg" src="../images/vk.svg" alt="">
-          <img class="socimg" src="../images/dzen.svg" alt="">
+          <a href="https://t.me/s/bazisvnutri"><img class="socimg" src="../images/tg.svg" alt=""></a>
+          <a href="https://vk.ru/club233584161"><img class="socimg" src="../images/vk.svg" alt=""></a>
+          <a href=""><img class="socimg" src="../images/dzen.svg" alt=""></a>
         </div>
       </div>
   </section>
