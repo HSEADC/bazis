@@ -202,7 +202,7 @@ a{
 }
 
 .art_fon1{
-  height: 264rem;
+  width: 555rem;
 }
 
 .Section_Article, .Section_Test{
@@ -397,7 +397,7 @@ h4#my-form-status{
   transition: all ease 0.6s;
 }
 
-.A_ErrorLink_404:hover {
+.A_ErrorLink_404:hover, .A_ThoughtLink:hover {
   background-color: #F16F33;
   transition: all ease 0.6s;
 }
@@ -754,10 +754,12 @@ nav {
   gap: 37rem;
 }
 
-.O_IndexSectionCardArtInf{
+.O_IndexSectionCardArtInf, .O_IndexSectionCardArtInf_color{
   background-color: #F4F2EC;
   width: 747rem;
   gap: 36rem;
+  border-radius: 38rem;
+  padding: 30rem
 }
 
 .h3_test_cardsArt{
@@ -792,13 +794,9 @@ nav {
 
 .A_IndexSectionCardTagArt{
   background: #5C5C88;
-  color: #DFEED7;
+  color: #F4F2EC;
 }
 
-.A_IndexSectionCardTagArt {
-  background: #5C5C88;
-  color: #DFEED7;
-}
 
 .C_ArticleContentList {
   display: flex;
@@ -820,9 +818,8 @@ nav {
   color: #5C5C88;
 }
 
-.C_ArticleImportant {
+.O_IndexSectionCardArtInf_color {
   background: #CBCBE7;
-  border-radius: 38rem;
 }
 
 .W_ArticleImportantHeader {

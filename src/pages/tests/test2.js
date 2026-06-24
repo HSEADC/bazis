@@ -1,8 +1,8 @@
 import { initTest, chooseAnswer } from '../../javascripts/tests'
 
-import imgGood from '../../images/card_1.png'
-import imgOk from '../../images/card_1.png'
-import imgBad from '../../images/card_1.png'
+import imgGood from '../../images/test_fon2.svg'
+import imgOk from '../../images/test_fon2.svg'
+import imgBad from '../../images/test_fon2.svg'
 
 const stages = [
   {

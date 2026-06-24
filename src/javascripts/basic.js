@@ -26,7 +26,11 @@ function colorTags() {
   )
 
   tags.forEach((tag) => {
-    if (tag.closest('.Section_Test')) return
+    if (tag.closest('.Section_ArticleInfo')) return
+
+    if (tag.closest('.S_IndexSection')) return
+
+    if (tag.closest('.Section_TestEditor')) return
 
     const tagText = normalizeTagText(tag.innerText)
     const tagColor = tagColors[tagText]
