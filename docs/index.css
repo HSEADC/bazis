@@ -541,7 +541,7 @@ a{
 }
 
 .art_fon1{
-  height: 264rem;
+  width: 555rem;
 }
 
 .Section_Article, .Section_Test{
@@ -561,7 +561,7 @@ a{
 }
 
 .thought_main{
-  background-image: url(images/1cb54382f67ada3b9d92.svg);
+  background-image: url(images/774171f403e550c326aa.svg);
   height: 502rem;
   justify-content: flex-end;
 }
@@ -736,7 +736,7 @@ h4#my-form-status{
   transition: all ease 0.6s;
 }
 
-.A_ErrorLink_404:hover {
+.A_ErrorLink_404:hover, .A_ThoughtLink:hover {
   background-color: #F16F33;
   transition: all ease 0.6s;
 }
@@ -922,23 +922,23 @@ h4#my-form-status{
 }
 
 .M_HeaderRituals{
-  background-image: url(images/88837e9848f737b9d7f3.svg);
+  background-image: url(images/3309f718ee34b257b0c8.svg);
 }
 
 .M_Header_Error404{
-  background-image: url(images/434316a158a557e385cd.svg);
+  background-image: url(images/e30bbe29183451b00c13.svg);
   height: 502rem;
   gap: 24rem;
 }
 
 .M_Header_Error500{
-  background-image: url(images/d6f1f9295a8e0f3077b1.svg);
+  background-image: url(images/ced39d69f1bc6830187a.svg);
   height: 502rem;
   gap: 24rem;
 }
 
 .M_Header_Error503{
-  background-image: url(images/ed8631f1bc0653aa6ef7.svg);
+  background-image: url(images/5c1800ddf04df4393585.svg);
   height: 502rem;
   gap: 24rem;
 }
@@ -1013,7 +1013,7 @@ nav {
 }
 
 .C_IndexSectionCardImg{
-  background-size: cover;
+  background-size: 100% 100%;
   height: 225rem;
 }
 
@@ -1093,10 +1093,12 @@ nav {
   gap: 37rem;
 }
 
-.O_IndexSectionCardArtInf{
+.O_IndexSectionCardArtInf, .O_IndexSectionCardArtInf_color{
   background-color: #F4F2EC;
   width: 747rem;
   gap: 36rem;
+  border-radius: 38rem;
+  padding: 30rem
 }
 
 .h3_test_cardsArt{
@@ -1131,13 +1133,9 @@ nav {
 
 .A_IndexSectionCardTagArt{
   background: #5C5C88;
-  color: #DFEED7;
+  color: #F4F2EC;
 }
 
-.A_IndexSectionCardTagArt {
-  background: #5C5C88;
-  color: #DFEED7;
-}
 
 .C_ArticleContentList {
   display: flex;
@@ -1159,9 +1157,8 @@ nav {
   color: #5C5C88;
 }
 
-.C_ArticleImportant {
+.O_IndexSectionCardArtInf_color {
   background: #CBCBE7;
-  border-radius: 38rem;
 }
 
 .W_ArticleImportantHeader {
