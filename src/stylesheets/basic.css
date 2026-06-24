@@ -564,7 +564,7 @@ h4#my-form-status{
   transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
 }
 
-.M_Header, .M_HeaderTest, .M_HeaderRituals, .M_Header_Error404, .M_Header_Error500, .M_Header_Error503{
+.M_Header, .M_HeaderTest, .M_HeaderRituals, .M_Header_Error404, .M_Header_Error500, .M_Header_Error503, .M_Header_Style{
   display: flex;
   margin: 126rem 69rem 0 69rem;
   flex-direction: column;
@@ -580,6 +580,10 @@ h4#my-form-status{
 
 .M_HeaderTest{
   background-image: url(../images/A_FonTests.svg);
+}
+
+.M_Header_Style{
+  margin: 0 69rem 0 69rem;
 }
 
 .M_HeaderRituals{
@@ -630,7 +634,7 @@ nav {
 }
 
 .test_fon1{
-  width: 525rem;
+  height: 373rem;
 }
 
 .C_IndexSectionCards{
